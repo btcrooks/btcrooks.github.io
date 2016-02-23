@@ -3,7 +3,6 @@ body {
   width:  100%;
   height: 100%;
   background: #fcfcfc;
-  overflow: hidden;
 }
 
 [data-sr] { visibility: hidden; }
@@ -37,17 +36,18 @@ strong { font-weight: 600; }
 
 .header h1 {
   margin-bottom: 16px;
-  font-size: 2.2em;
+  font-size: 3.2em;
   letter-spacing: .02em;
   font-weight: 200;
 }
 .header p {
   margin: 0 auto;
   margin-bottom: 30px;
-  width: 460px;
-  font-size: .8em;
-  line-height: 24px;
+  width: 600px;
+  font-size: 1em;
+  line-height: 30px;
 }
+
 .align-left {
   text-align: left;
 }
@@ -97,7 +97,7 @@ a:hover {
 a:active {}
 
 /* Page Border */
-.border { position: absolute; z-index: 0; }
+.border { position: fixed; z-index: 0; }
 .border--top { top:  0; left: 0; width:  100%; height: 20px; background: #fff; }
 .border--right { top:   0; right: 0; width:  20px; height: 100%; background: #fff; }
 .border--bottom { bottom:  0; left:    0; width:  100%; height: 20px; background: #fff; }
@@ -114,13 +114,29 @@ a:active {}
   top:  50%;
   left: 50%;
   margin-top:  -170px;
-  margin-left: -300px;
-  width:  600px;
+  margin-left: -400px;
+  width:  800px;
   height: 300px;
   text-align: center;
 }
-
+.inner-page--header {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  margin-top: 80px;
+  width:  600px;
+  height: auto;
+}
+.inner-page--header p {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 600px;
+  font-size: 1em;
+  line-height: 30px;
+}
 .inner-page {
+  font-size: 3em;
   overflow: hidden;
 }
 .inner-page--container {
@@ -129,6 +145,7 @@ a:active {}
   max-width: 960px;
   height: auto;
   text-align: center;
+  background: #f2f2f2;
 }
 .unslider { z-index: 100; }
 .unslider img { display:none; }
