@@ -5,6 +5,9 @@
     <title>Brandon Crooks</title>
     <link rel='stylesheet' href='vendor/css/vendor.css'>
     <link rel='stylesheet' href='lib/css/main.css'>
+    <!-- start progress bar -->
+    <script src="vendor/js/nprogress.js"></script>
+    <script> NProgress.start(); </script>
   </head>
   <body>
     <div class='border border--top'></div>
@@ -40,12 +43,10 @@
       </div>
     </div>
     <script src="vendor/js/jquery.min.js"></script>
-    <script src="vendor/js/nprogress.js"></script>
     <script src='vendor/js/scrollReveal.min.js'></script>
     <script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
     <script src="vendor/js/unslider-min.js"></script>
     <script>
-      NProgress.start();
       $(document).ready(function() {
         NProgress.set(0.4);
         $('.unslider').unslider({
