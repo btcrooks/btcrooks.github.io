@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'>
+    <title>Brandon Crooks</title>
+    <link rel='stylesheet' href='vendor/css/vendor.css'>
+    <link rel='stylesheet' href='lib/css/main.css'>
+  </head>
+  <body>
+    <div class='border border--top'></div>
+    <div class='border border--right'></div>
+    <div class='border border--bottom'></div>
+    <div class='border border--left'></div>
+    <div class='wrapper'>
+      <div class='header'>
+        <div data-sr='wait 0s' class='logo'></div>
+        <h1 data-sr='wait .3s'>Hey There, I'm <strong>Brandon Crooks</strong>.</h1>
+        <p data-sr='wait .6s'>I'm a Product Designer and Front-end Developer based in New York
+        with a love for crafting bits and pixels into simple, useful and
+        meaningful experiences.</p>
+        <nav data-sr='wait .9s' class='nav header--social--nav'>
+          <ul>
+            <li><a href='https://twitter.com/@crookedpixel'><i class='fa fa-twitter'></i></a></li>
+            <li><a href='https://instagram.com/crookedpixel'><i class='fa fa-github-alt'></i></a></li>
+            <li><a href='https://github.com/btcrooks'><i class='fa fa-instagram'></i></a></li>
+          </ul>
+        </nav>
+        <nav data-sr='wait 1.2s' class='nav header--nav'>
+          <ul>
+            <li><a href='about.html'>About</a></li>
+            <li><a href='gallery.html'>Gallery</a></li>
+            <li><a href='case-studies.html'>Case Studies</a></li>
+            <li><a href='contact.html'>Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <script src='vendor/js/jquery.min.js'></script>
+    <script src='vendor/js/nprogress.js'></script>
+    <script src='vendor/js/scrollReveal.min.js'></script>
+    <script>
+      NProgress.start();
+      $(document).ready(function() { NProgress.set(0.4); });
+      $(window).load(function() {
+        NProgress.done();
+        window.sr = new scrollReveal({
+          enter: 'bottom',
+          move: '24px',
+          reset: false,
+          delay: 'always',
+          easing: 'ease',
+          delay: 'once'
+        });
+      });
+      $(window).unload(function() { NProgress.start(); });
+    </script>
+  </body>
+</html>
