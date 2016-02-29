@@ -94,7 +94,9 @@ a:hover {
   letter-spacing: .1em;
   transition: all .4s ease-in-out;
 }
-a:active {}
+a:active {
+  color: #d3d3d3;
+}
 
 /* Page Border */
 .border { position: fixed; z-index: 0; }
@@ -169,4 +171,14 @@ a:active {}
 .unslider-arrow.next {
   left:  auto;
   right: 100px;
+}
+.fa {
+  letter-spacing: 0;
+  transition: all .2s ease-in-out;
+}
+.fa:hover {
+  transform: scale(1.4);
+}
+.fa:active {
+  color: #d3d3d3;
 }
