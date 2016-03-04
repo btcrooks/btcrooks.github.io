@@ -1,0 +1,35 @@
+.button {
+  width:  150px;
+  height: 50px;
+  padding-top:4px;
+  color: #3c2249;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 38px;
+  letter-spacing: .02em;
+  /* text-transform: uppercase; */
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 60px;
+  border: 2px solid #3c2249;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: all .4s ease-in-out;
+}
+.button:hover {
+  outline: 0;
+  box-shadow: 0 4px 20px rgba(60,53,29,.4);
+  transition: all .4s ease-in-out;
+}
+.button__alt {
+  background: #3c2249;
+  color: #fff;
+}
+
+.header ul li { display: inline-block; }
+.header ul li:not(:last-child) {
+  margin-right: 30px;
+}
+
