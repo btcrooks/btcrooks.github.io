@@ -35,7 +35,7 @@ body { color: #fff; }
 .flip-logo {
   display: block;
   margin: 0 auto;
-  margin-top:    45%;
+  margin-top:    30%;
   margin-bottom: 20px;
   width:  144px;
   height: 68px;
@@ -47,3 +47,58 @@ body { color: #fff; }
   font: 14px Helvetica, Arial, sans-serif;
 }
 
+input,
+select,
+textarea {
+  color: #49d4b5;
+}
+
+input[type=email] {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  width:  80%;
+  height: 50px;
+  border: 0;
+  border-radius: 60px;
+  color: #49d4b5;
+  text-align: center;
+}
+
+input[type=submit] {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  border: 2px solid #49d4b5;
+}
+
+input[type=submit]:hover {
+  background: #49d4b5;
+}
+
+.social {
+  /* position: absolute; */
+  /* bottom: 0; */
+  width:  99.7%;
+  height: 30px;
+  text-align: center;
+}
+
+.social ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.social ul li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social i {
+  color: #fff;
+  transition: all .5s ease-in-out;
+}
+
+.social i:hover {
+  color: #49d4b5;
+  font-size: 25px;
+}
