@@ -52,7 +52,7 @@ body { color: #fff; }
  *************************************************/
 .wrapper {
   padding-top: 5%;
-  background: url(../../img/background_img.png) center top no-repeat;
+  background: url(../../img/background_img.jpg) center top no-repeat;
   background-size: cover;
 }
 
@@ -68,6 +68,11 @@ body { color: #fff; }
   margin-bottom: 20px;
   width:  144px;
   height: 68px;
+}
+
+.about-section {
+  margin: 100px 0;
+  padding: 0 20px;
 }
 
 /* MailChimp Form
