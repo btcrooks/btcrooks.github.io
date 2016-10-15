@@ -91,7 +91,6 @@ a {
 a:visited {}
 a:hover {
   opacity: 1;
-  letter-spacing: .1em;
   transition: all .4s ease-in-out;
 }
 a:active {
