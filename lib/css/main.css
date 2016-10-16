@@ -90,7 +90,7 @@ a {
 }
 a:visited {}
 a:hover {
-  opacity: .8;
+  opacity: .6;
   transition: all .4s ease-in-out;
 }
 a:active {
