@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Brandon Crooks</title>
+    <link rel="stylesheet" href="vendor/css/vendor.css">
+    <link rel="stylesheet" href="lib/css/main.css">
+    <link rel="stylesheet" href="lib/css/lm.css">
+  </head>
+  <body>
+    <div class="border border--top"></div>
+    <div class="border border--right"></div>
+    <div class="border border--bottom"></div>
+    <div class="border border--left"></div>
+    <div class='wrapper inner--page'>
+      <div class='inner-page--container'>
+        <nav data-sr='wait 0s' class='nav inner-page--nav'>
+          <ul>
+            <li><a href='index.html'>Home</a></li>
+            <li><a href='about.html'>About</a></li>
+            <li><a href='gallery.html'>Gallery</a></li>
+            <li><a href='case-studies.html'>Case Studies</a></li>
+            <li><a href='media/Brandon_Crooks-Resume_2016.pdf' target='_new'>Resume</a></li>
+          </ul>
+        </nav>
+        <div class="header">
+          <h1 data-sr='wait .3s'>LegalMatch Redesign</h1>
+          <p data-sr='wait .6s' class='align-left'><strong>Brief:</strong> LegalMatch connects
+          ordinary people with lawyers.</p>
+          <p data-sr='wait .9s'  class='align-left' style='margin-top:-20px;'><strong>Approach:</strong> Given the nature of
+          the site, I took a utilitarian over a stylistic approach by
+          keeping many of the important links and info in view and directly
+          accessible to the user, with plenty of call to actions.</p>
+          <p data-sr='wait 1.2s'  class='align-left' style='margin-top:-20px;'>
+          I also felt it was necessary to remove the clunky 'table' of links
+          from the home page. I feel it would be a better expereince to have a
+          stand-alone page, or possibly an overlay, dedicated to showing
+          frequently searched lawyers as well as general search.</p>
+          <ul data-sr='wait 1.5s'>
+            <li>
+              <a href="https://goo.gl/RxkDn8">
+                <div class="button">Download PSD</div>
+              </a>
+            </li>
+            <li>
+              <a href="/legalmatch/index.html">
+                <div class="button button__alt">View Website</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src='vendor/js/jquery.min.js'></script>
+    <script src="vendor/js/nprogress.js"></script>
+    <script src='vendor/js/scrollReveal.min.js'></script>
+    <script>
+      NProgress.start();
+      $(document).ready(function() { NProgress.set(0.4); });
+      $(window).load(function() {
+        NProgress.done();
+        window.sr = new scrollReveal({
+          enter: 'bottom',
+          move: '24px',
+          reset: false,
+          delay: 'always',
+          easing: 'ease',
+          delay: 'once'
+        });
+      });
+      $(window).unload(function() { NProgress.start(); });
+    </script>
+  </body>
+</html>
