@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="84px" height="84px" viewBox="0 0 84 84" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Menu Button - Hover</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Menu-Button---Hover">
+            <rect id="Rectangle-2" fill="#F05D60" x="0" y="0" width="84" height="84"></rect>
+            <text id="M" font-family="BrandonGrotesque-Black, Brandon Grotesque" font-size="20" font-weight="700" letter-spacing="-0.400000095" fill="#FFFFFF">
+                <tspan x="25.42" y="39">M</tspan>
+            </text>
+            <text id="N" font-family="BrandonGrotesque-Black, Brandon Grotesque" font-size="20" font-weight="700" letter-spacing="-0.400000095" fill="#FFFFFF">
+                <tspan x="25.47" y="58">N</tspan>
+            </text>
+            <text id="E" font-family="BrandonGrotesque-Black, Brandon Grotesque" font-size="20" font-weight="700" letter-spacing="-0.400000095" fill="#FFFFFF">
+                <tspan x="45.34" y="39">E</tspan>
+            </text>
+            <text id="U" font-family="BrandonGrotesque-Black, Brandon Grotesque" font-size="20" font-weight="700" letter-spacing="-0.400000095" fill="#FFFFFF">
+                <tspan x="43.99" y="58">U</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
