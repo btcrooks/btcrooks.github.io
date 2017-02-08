@@ -8,14 +8,14 @@ html {
 
 /* Smaller than phablet */
 @media (max-width: 550px) {
-  .hide--mobile {
+  .hide__mobile {
     display: none;
   }
 }
 
 /* Hide for preload
  **************************/
-section, .section--background__black,
+section, .section__background__black,
 figure, footer {
   display: none;
 }
@@ -27,7 +27,7 @@ figure, footer {
 .nav {
   z-index: 100;
 }
-.nav--button {
+.nav__button {
   position: fixed;
   top:   0;
   right: 0;
@@ -38,13 +38,13 @@ figure, footer {
   cursor: pointer;
   z-index: 100;
 }
-.nav--button:hover {
+.nav__button:hover {
   background: url(../../img/menu_button_hover.svg) center center no-repeat;
 }
-.nav--button:active {
+.nav__button:active {
   opacity: .8;
 }
-.nav--button__close {
+.nav__button--close {
   position: absolute;
   top:   0;
   right: 0;
@@ -54,14 +54,14 @@ figure, footer {
   transition: all .2s ease-in-out;
   cursor: pointer;
 }
-.nav--button__close:hover {
+.nav__button--close:hover {
   -webkit-transform: rotate(90deg);
      -moz-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
        -o-transform: rotate(90deg);
           transform: rotate(90deg);
 }
-.nav--wrapper {
+.nav__wrapper {
   position: fixed;
   top:   0;
   right: -422px;
@@ -71,7 +71,7 @@ figure, footer {
   background: #000;
   z-index: 100;
 }
-.nav--container {
+.nav__container {
   position: absolute;
   margin-top: -200px;
   top: 50%;
@@ -80,27 +80,27 @@ figure, footer {
   height: 400px;
 
 }
-.nav--container ul li a {
+.nav__container ul li a {
   font-size: 30px;
   color: #fff;
   line-height: 80px;
   transition: all .2s ease-in-out;
 }
-.nav--container ul li a:hover {
+.nav__container ul li a:hover {
   color: #f05d60;
 }
-.nav--social-links {
+.nav__social-links {
   position: absolute;
   bottom: 0;
   width: 100%;
   text-align: center;
 }
-.nav--social-links .social-links i {
+.nav__social-links .social-links i {
   margin-left: 10px;
   color: #fff;
   transition: all .2s ease-in-out;
 }
-.nav--social-links .social-links i:hover {
+.nav__social-links .social-links i:hover {
   color: #f05d60;
 }
 /* Typography
@@ -137,7 +137,7 @@ ul li {
 strong {
   font-weight: 800;
 }
-.section--header h1 {
+.section__header h1 {
   margin: 0 0 40px;
 }
 .hero-image p {
@@ -180,17 +180,23 @@ strong {
 }
 /* Links
  **************************/
-.special:link {
+.special {
+  text-decoration: none;
+  color: #000;
+}
+.special:hover {
   text-decoration: none;
   color: #f05d60;
 }
 a {
-  color: #000;
+  color: #f37d80;
   text-decoration: none;
   transition: all .2s ease-in-out;
 }
 a:hover {
   color: #f05d60;
+  /* animate underline */
+  text-decoration: underline;
 }
 .social-links i {
   margin-left: 10px;
@@ -213,116 +219,53 @@ footer a {
 .column, .columns {
   /* border: 2px solid red; */
 }
-.case-study {
-  display: inline-block;
-  position: relative;
-  margin-bottom: 4%;
-  height: 300px;
-  transition: all .5s ease-in-out;
-  cursor: pointer;
-}
-.case-study--container {}
-.case-study--container .section:first-child {
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-.case-study--container .section:not(:last-child) {
-  margin-bottom: 20px;
-}
-.case-study:hover {
-  opacity: .9;
-}
-.case-study__tall {
-    height: 638px;
-}
-.case-study__vizo-news {
-  background: url(../../img/thumbnails/vizo_news.png) #000 center center no-repeat;
-  background-size: cover;
-}
-.case-study__wooo {
-  background: url(../../img/thumbnails/wooo.png) #000 center center no-repeat;
-  background-size: cover;
-}
-.case-study__trcj {
-  background: url(../../img/thumbnails/trcj.png) #000 center center no-repeat;
-  background-size: cover;
-}
-.case-study__dropcap {
-  background: url(../../img/thumbnails/dropcap.png) #000 center center no-repeat;
-  background-size: cover;
-}
-.case-study__midwayz {
-  background: url(../../img/thumbnails/midwayz.png) #000 center center no-repeat;
-  background-size: cover;
-}
-.case-study__naam {
-  background: url(../../img/thumbnails/naam.png) #000 center center no-repeat;
-  background-size: cover;
-}
-.case-study__bofa {
-  background: url(../../img/thumbnails/bofa.png) #000 center center no-repeat;
-  background-size: cover;
-}
-.case-study__kindle {
-  background: url(../../img/thumbnails/kindle.png) #000 center center no-repeat;
-  background-size: cover;
-}
-.case-study__shopdrop {
-  background: url(../../img/thumbnails/shopdrop.png) #000 center center no-repeat;
-  background-size: cover;
-}
 section {
   z-index: 0;
 }
 .section {
   margin-bottom: 120px;
 }
-.section--header {}
-.section--header__about {
+.section__about {
   padding-top: 200px;
   width: 100%;
 }
-.section--header__about img {
-  display: block;
-  margin: 0 auto;
-}
-.section--header__case-study {
+.section__header--case-study {
   margin-bottom: 40px;
   padding-top: 100px;
   width: 100%;
 }
-.section--header__case-study h1 {
+.section__header--case-study h1 {
   margin: 0;
 }
-.section--header__selected-works {
+.section__selected-works {
   margin-bottom: 40px;
   padding-top: 200px;
   width: 100%;
 }
-.section--background__black {
+.section__more-projects-background {
   width: 100%;
   height: 800px;
   background: #000;
 }
-.section--more-projects {
+.section__more-projects {
   margin-top: -700px;
   margin-bottom: 40px;
   padding-top: 20px;
   width: 100%;
 }
-.section--more-projects hr {
+.section__more-projects hr {
   color: #fff;
   background: #fff;
 }
-.section--more-projects h1 {
+.section__more-projects h1 {
   color: #fff;
 }
-.section--header__redesigns {
+.section__redesigns {
   margin-bottom: 40px;
   padding-top: 20px;
   width: 100%;
 }
-.section--project-navigation {
+.section__project-navigation {
   margin 0;
   font-size: 16px;
 }
@@ -354,6 +297,6 @@ hr {
   height: auto;
   background: #000;
 }
-.footer--logo {
+.footer__logo {
   margin: 33px 0;
 }
