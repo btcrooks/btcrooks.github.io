@@ -18,10 +18,10 @@
   </head>
   <body>
     <!-- Nav -->
-    <div class="nav--button"></div>
-    <div class="nav--wrapper">
-      <div class="nav--button__close"></div>
-      <nav class="nav--container">
+    <div class="nav__button"></div>
+    <div class="nav__wrapper">
+      <div class="nav__button__close"></div>
+      <nav class="nav__container">
         <ul>
           <li><a href="about.html">About</a></li>
           <li><a href="media/BrandonCrooks_Resume_2017.pdf" target="_new">Resume</a></li>
@@ -30,7 +30,7 @@
           <li><a href="blog.html">Blog</a></li>
         </ul>
       </nav>
-      <div class="nav--social-links">
+      <div class="nav__social-links">
         <p>
           <span class="social-links">
             <a href="https://github.com/btcrooks" target="_new"><i class="fa fa-github" aria-hidden="true"></i></a>
@@ -45,13 +45,10 @@
     </div>
     <!-- /Nav -->
     <div class="container">
-      <section class="section section--header__about">
-        <img src="img/avatar.png" alt="Brandon Crooks Avatar" width="134px"
-        height="132px">
-      </section>
+      <section class="section section__about"></section>
       <!-- Intro -->
       <section class="section">
-        <div data-sr='wait 0s' class="row">
+        <div class="row">
           <div class="one column">&nbsp;</div>
           <div class="one column"><hr></div>
           <div class="ten columns">
@@ -59,33 +56,45 @@
           </div><!-- ./columns -->
         </div><!-- /.row -->
         <div class="row">
-          <div class="two columns hide--mobile">&nbsp;</div>
+          <div class="two columns hide__mobile">&nbsp;</div>
           <div class="eight columns">
-            <p data-sr='wait 0s'>My name is Brandon Crooks. I’m a Product Designer based out of New
-            York. With over 4 years of experience, I’ve helped brands develop
-            better identities, mobile experiences, and digital products. I believe
-            in simplicity and craftsmanship.</p>
+            <p>I’m Brandon Crooks—a Product Designer based
+            out of New York with a focus on UX design, interaction design, and
+            prototyping. I work with product owners, designers and engineers to
+            create memorable experinces for users and meet strategic business
+            goals.</p>
+            <p>With over 4 years of experience, I’ve worked
+            with various brands to help develop identities, mobile experiences,
+            and digital products. I believe in simplicity and
+            craftsmanship.</p>
+            <p>
+              <ul>
+                <li style="display:inline-block;"><a href="" target="_new">Resume</a></li>
+                <li style="display:inline-block; margin: 0 20px;"><a href="" target="_new">LinkedIn</a></li>
+                <li style="display:inline-block;"><a href="" target="_new">Dribbble</a></li>
+              </ul>
+            </p>
           </div><!-- ./columns -->
         </div><!-- /.row -->
       </section>
       <!-- Skills -->
       <section class="section">
-        <div data-sr='wait 0s' class="row">
-          <div class="two columns hide--mobile">&nbsp;</div>
+        <div class="row">
+          <div class="two columns hide__mobile">&nbsp;</div>
           <div class="ten columns">
             <h1>Skills.</h1>
           </div><!-- ./columns -->
         </div><!-- /.row -->
         <div class="row">
-          <div class="two columns hide--mobile">&nbsp;</div>
+          <div class="two columns hide__mobile">&nbsp;</div>
           <div class="eight columns">
-            <p data-sr='wait 0s' >My core areas lie in mobile UI/UX design and
+            <p>My core areas lie in mobile UI/UX design and
             prototyping. I'm also very passionate about education and social
             good.</p>
           </div><!-- ./columns -->
         </div><!-- /.row -->
-        <div data-sr='wait 0s'  class="row">
-          <div class="two columns hide--mobile">&nbsp;</div>
+        <div class="row">
+          <div class="two columns hide__mobile">&nbsp;</div>
           <div class="two columns">
             <ul>
               <li>Product Design</li>
@@ -111,24 +120,24 @@
             <ul>
               <li>Interaction Design</li>
               <li>Photography</li>
-              <li>3D Lighting & Rendering</li>
+              <li>3D Lighting &amp; Rendering</li>
             </ul>
           </div><!-- /.columns -->
         </div><!-- /.row -->
       </section>
       <!-- Contact -->
-      <section class="section">
+      <section id="contact" class="section">
         <div class="row">
-          <div class="two columns hide--mobile">&nbsp;</div>
+          <div class="two columns hide__mobile">&nbsp;</div>
           <div class="ten columns">
-            <h1 data-sr='wait 0s' >Contact.</h1>
+            <h1>Contact.</h1>
           </div><!-- ./columns -->
         </div><!-- /.row -->
         <div class="row">
-          <div class="two columns hide--mobile">&nbsp;</div>
-          <div data-sr='wait 0s'  class="eight columns">
+          <div class="two columns hide__mobile">&nbsp;</div>
+          <div class="eight columns">
             <p>Have a question or just want to grab coffee? Shoot me an email
-            <a class="special" href="mailto:hello@brandoncrooks.com">hello@brandoncrooks.com</a></p>
+            <a href="mailto:hello@brandoncrooks.com">hello@brandoncrooks.com</a></p>
             <p>Let's stay in touch!
               <span class="social-links">
                 <a href="https://github.com/btcrooks" target="_new"><i class="fa fa-github" aria-hidden="true"></i></a>
@@ -152,7 +161,7 @@
           <div class="four columns">
             <p>&copy; Brandon Crooks.</p>
             <p>All rights reserved.</p>
-            <img class="footer--logo" src="img/Footer_Logo.svg" alt="Brandon Crooks Logo">
+            <img class="footer__logo" src="img/Footer_Logo.svg" alt="Brandon Crooks Logo">
           </div> <!-- first column -->
           <div class="four columns">
             <h4>All The Links.</h4>
