@@ -15,7 +15,7 @@ html {
 
 /* Hide for preload
  **************************/
-section, .section__background__black,
+section, .section--more-projects-background,
 figure, footer {
   display: none;
 }
