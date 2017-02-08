@@ -19,19 +19,19 @@
   </head>
   <body>
     <!-- Nav -->
-    <div class="nav--button"></div>
-    <div class="nav--wrapper">
-      <div class="nav--button__close"></div>
-      <nav class="nav--container">
+    <div class="nav__button"></div>
+    <div class="nav__wrapper">
+      <div class="nav__button__close"></div>
+      <nav class="nav__container">
         <ul>
           <li><a href="../about.html">About</a></li>
-          <li><a href="../media/BrandonCrooks_Resume_2017.pdf" target="_new">Resume</a></li>
-          <li><a href="../selected-works.html">Selected Works</a></li>
+          <li><a href="media/BrandonCrooks_Resume_2017.pdf" target="_new">Resume</a></li>
+          <li><a href="selected-works.html">Selected Works</a></li>
           <li><a href="mailto:hello@brandoncrooks.com">Contact</a></li>
-          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="blog.html">Blog</a></li>
         </ul>
       </nav>
-      <div class="nav--social-links">
+      <div class="nav__social-links">
         <p>
           <span class="social-links">
             <a href="https://github.com/btcrooks" target="_new"><i class="fa fa-github" aria-hidden="true"></i></a>
@@ -45,8 +45,8 @@
       </div>
     </div>
     <!-- /Nav -->
-    <div class="container case-study--container">
-      <section class="section section--header__case-study">
+    <div class="container">
+      <section class="section section__case-study">
         <div class="row">
           <div class="one column">&nbsp;</div>
           <div class="one column"><hr></div>
@@ -170,6 +170,9 @@
             headline and story summary. The experience had to be seamless and
             easy to use as this is where users will spend majority of their
             time.</p>
+
+            <p class="pull-quote">“Egestas egestas fringilla phasellus faucibus
+            scelerisque. Hendrerit dolor magna eget est lorem ipsum dolor sit.”</p>
           </div><!-- ./columns -->
         </div><!-- /.row -->
       </section>
@@ -195,7 +198,7 @@
     </div> <!-- /.container -->
 
     <!-- Black Background -->
-    <div class="section--more-projects-background"></div>
+    <div class="section--more-projects-background hide__preload"></div>
 
     <!-- SELECTED WORKS -->
     <div class="container">
@@ -210,68 +213,23 @@
       </section>
 
       <section class="section">
-        <div class="row">
-          <div class="two columns hide--mobile">&nbsp;</div>
-          <div onClick="location.href='case-studies/vizo-news.html'" class="six columns case-study case-study__vizo-news">
-            <h2>Vizo News.</h2>
-          </div>
-          <div class="four columns case-study case-study__wooo">
-            <h2>Wooo!</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="two columns hide--mobile">&nbsp;</div>
-          <div class="ten columns case-study case-study__trcj">
-            <h2>The Raw Cookie Jar.</h2>
-          </div>
-        </div> <!-- /.row -->
-        <div class="row">
-          <div class="two columns hide--mobile">&nbsp;</div>
-          <div class="four columns case-study case-study__tall
-            case-study__dropcap">
-            <h2>DropCap.</h2>
-          </div>
-          <div class="six columns case-study case-study__midwayz">
-            <h2>Midwayz.</h2>
-          </div>
-          <div class="six columns case-study case-study__naam">
-            <h2>Naam.</h2>
-          </div>
-        </div>
+          <!-- <div onClick="location.href='case&#45;studies/vizo&#45;news.html'" class="six columns case&#45;study case&#45;study__vizo&#45;news"> -->
       </section>
     </div><!-- /.container -->
     <!-- Footer -->
+    <div class="footer-avatar hide__preload"></div>
     <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="one column">&nbsp;</div>
-          <div class="four columns">
-            <p>&copy; Brandon Crooks.</p>
-            <p>All rights reserved.</p>
-            <img class="footer--logo" src="../img/Footer_Logo.svg" alt="Brandon Crooks Logo">
-          </div> <!-- first column -->
-          <div class="four columns">
-            <h4>All The Links.</h4>
-            <ul>
-              <li><a href="../about.html">About</a></li>
-              <li><a href="../media/BrandonCrooks_Resume_2017.pdf" target="_new">Resume</a></li>
-              <li><a href="../selected-works.html">Selected Works</a></li>
-              <li><a href="mailto:hello@brandoncrooks.com">Contact</a></li>
-              <li><a href="../blog.html">Blog</a></li>
-            </ul>
-          </div> <!-- second column -->
-          <div class="three columns">
-            <h4>Keep In Touch.</h4>
-            <ul>
-              <li><a href="https://github.com/btcrooks">Github</a></li>
-              <li><a href="https://dribbble.com/crookedpixel">Dribbble</a></li>
-              <li><a href="https://instagram.com/crookedpixel">Instagram</a></li>
-              <li><a href="https://www.facebook.com/btcrooks">Facebook</a></li>
-              <li><a href="https://medium.com/@btcrooks">Medium</a></li>
-            </ul>
-          </div> <!-- third column -->
-        </div>
-      </div>
+      <div style="height: 70px; width: 100%;"></div>
+      <p style="float: left; margin-left: 35px;">&copy; Brandon Crooks. All rights reserved.</p>
+      <span class="social-links" style="float: right; margin-right: 40px;">
+        <a href="https://github.com/btcrooks" target="_new"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a href="https://dribbble.com/crookedpixel" target="_new"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+        <a href="https://instagram.com/crookedpixel" target="_new"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://medium.com/@brandoncrooks" target="_new"><i class="fa fa-medium" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/brandon-crooks-336631106"
+          target="_new"><i class="fa fa-linkedin"
+          aria-hidden="true"></i></a>
+      </span>
     </footer>
     <script src='../vendor/js/nprogress.js'></script>
     <script src='../vendor/js/scrollReveal.min.js'></script>
