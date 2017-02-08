@@ -194,14 +194,33 @@ strong {
   color: #f05d60;
 }
 a {
+  position: relative;
   color: #f37d80;
   text-decoration: none;
   transition: all .2s ease-in-out;
 }
 a:hover {
   color: #f05d60;
-  /* animate underline */
-  text-decoration: underline;
+}
+a:before {
+  visibility: hidden;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #f05d60;
+  content: '';
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform .4s cubic-bezier(.19,1,.22,1);
+}
+a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+.social-links a:hover:before {
+  visibility: hidden;
 }
 .social-links i {
   margin-left: 10px;
