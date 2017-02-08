@@ -15,8 +15,10 @@ html {
 
 /* Hide for preload
  **************************/
-section, .section--more-projects-background,
-figure, footer {
+section,
+.section--more-projects-background,
+figure,
+footer {
   display: none;
 }
 [data-sr] { visibility: hidden; }
@@ -105,9 +107,12 @@ figure, footer {
 }
 /* Typography
  **************************/
-h1, h2,
-h3, h4,
-h5 h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "brandon-grotesque",sans-serif;
   font-style: normal;
 }
@@ -216,7 +221,8 @@ footer a {
 }
 /* Modules
  **************************/
-.column, .columns {
+.column,
+.columns {
   /* border: 2px solid red; */
 }
 section {
