@@ -444,4 +444,10 @@ hr {
     font-size: 16px;
     margin-bottom: 100px;
   }
+  .nav__container {
+    padding: 0 0 0 80px;
+  }
+  .nav__container ul li a {
+    line-height: 60px;
+  }
 }
