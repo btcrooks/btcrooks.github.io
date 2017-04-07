@@ -365,10 +365,14 @@ section {
   color: #7f7f7f;
 }
 .cs__description {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  font-size: 18px;
 }
 .cs__button {
-  font-size: 12px;
+  font-size: 18px;
+}
+.cs__button--disabled {
+  color: #aeaeae;
 }
 .cs__img--mini {
   margin-bottom: 40px;
