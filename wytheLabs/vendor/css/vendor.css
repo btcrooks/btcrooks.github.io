@@ -1,0 +1,6 @@
+/**************************************\
+ * Vendor - Imports vendor CSS modules
+\**************************************/
+@import url('font-awesome.min.css');
+@import url('reset.css');
+@import url('skeleton.css');
