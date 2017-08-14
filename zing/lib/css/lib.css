@@ -195,6 +195,11 @@ a:hover {
 @media (max-width: 700px) {
   /* Content
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  /* Header
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .header {
+    height: 1460px;
+  }
   .content--title__left {
     position: relative;
     top: auto;
