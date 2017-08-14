@@ -129,6 +129,7 @@ a:hover {
   height: auto;
 }
 .content--image__left {
+  width: 100%;
   max-width: 400px;
   height: auto;
 }
