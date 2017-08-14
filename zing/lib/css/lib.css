@@ -173,6 +173,59 @@ a:hover {
   line-height: 1.8em;
 }
 
+
+/* Pricing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.pricing--item {
+  margin: 20px 0;
+  width: 100%;
+  min-height: 400px;
+  border: 2px solid #000;
+  text-align: center;
+}
+
+.pricing--title {
+  margin-top: 30px;
+  padding: 10px;
+  color: #000;
+  font-size: 140%;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.pricing--description {
+  padding: 10px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+}
+
+.pricing--button {
+  margin: 10px 0 0 0;
+  color: #000 !important;
+  border: 2px solid #000 !important;
+  height: 40px !important;
+}
+.pricing--button:hover {
+  color: #fff !important;
+  background-color: #000 !important;
+}
+
+.pricing--item__em {
+  margin-top: -50px;
+  height: 500px;
+}
+
+.pricing--item__em
+.pricing--button {
+  margin-top: 60px;
+}
+
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .footer {
@@ -228,4 +281,6 @@ a:hover {
     right: auto;
     text-align: right;
   }
+  .pricing--item__em {
+    margin-top: auto;
 }
