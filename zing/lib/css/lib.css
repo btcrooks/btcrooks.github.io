@@ -129,7 +129,6 @@ a:hover {
   height: auto;
 }
 .content--image__left {
-  width: 100%;
   max-width: 400px;
   height: auto;
 }
@@ -269,6 +268,9 @@ a:hover {
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   .header {
     height: 1460px;
+  }
+  .content--image__left {
+    width: 100%;
   }
   .content--title__left {
     position: relative;
