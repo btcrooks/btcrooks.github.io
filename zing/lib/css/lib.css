@@ -83,13 +83,13 @@ a:hover {
   margin-right: 16px;
 }
 .nav--link__book {
-  color: #000 !important;
-  border: 1px solid #000 !important;
+  color: #54A99B !important;
+  border: 1px solid #54A99B !important;
   height: 40px !important;
 }
 .nav--link__book:hover {
   color: #fff !important;
-  background-color: #000 !important;
+  background-color: #54A99B !important;
 }
 
 /* Top Nav (Alternative - Homepage White)
@@ -124,6 +124,7 @@ a:hover {
   margin: 100px 0;
 }
 .content--image {
+  position: relative;
   width: 400px;
   height: auto;
 }
@@ -135,10 +136,19 @@ a:hover {
   width: 100%;
   height: auto;
 }
+.content--image__right {
+  float: right;
+  max-width: 400px;
+  height: auto;
+}
+.content--image__right img {
+  float: right;
+}
 .content--title {
+  width: 100%;
   color: #000;
   font-weight: 700;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   letter-spacing: 4px;
 }
@@ -147,6 +157,12 @@ a:hover {
   position: absolute;
   top: 370px;
   left: 380px;
+}
+
+.content--title__right {
+  position: absolute;
+  top: 370px;
+  right: 160px;
 }
 
 .content--item {
@@ -205,5 +221,11 @@ a:hover {
     top: auto;
     left: auto;
     text-align: left;
+  }
+  .content--title__right {
+    position: relative;
+    top: auto;
+    right: auto;
+    text-align: right;
   }
 }
