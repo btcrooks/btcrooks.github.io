@@ -17,12 +17,16 @@ li {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .header {
   width: 100%;
-  height: 1000px;
+  height: 900px;
   background: url(../../img/header_bg.png) center center no-repeat;
   background-size: cover;
 }
+.header
+.container {
+  padding-top: 270px;
+}
 .header--title {
-  margin: 200px auto 0 auto;
+  margin: 0 auto;
   padding: 0;
   width: 90%;
   color: #fff;
@@ -54,7 +58,17 @@ li {
 /* Top Nav
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .nav {
-  margin-top: 20px;
+  position: fixed;
+  padding-top: 20px;
+  width: 100%;
+  max-height: 80px;
+  top:  0;
+  left: 0;
+  z-index: 1000;
+  background: #fff;
+}
+.spacer--nav {
+  height: 100px;
 }
 .nav
 a {
@@ -68,14 +82,14 @@ a:hover {
 }
 .nav--logo {
   float: left;
-  width:  96px;
-  height: 45px;
+  width:  106px;
+  height: 55px;
   background: url(../../img/nav_logo.png) center center no-repeat;
   background-size: contain;
 }
 .nav--links {
   float: right;
-  margin-top: 10px;
+  margin-top: 14px;
 }
 .nav--links li {
   display: inline-block;
@@ -84,13 +98,13 @@ a:hover {
   margin-right: 16px;
 }
 .nav--link__book {
-  color: #54A99B !important;
-  border: 1px solid #54A99B !important;
+  color: #47BAA8 !important;
+  border: 1px solid #47BAA8 !important;
   height: 40px !important;
 }
 .nav--link__book:hover {
   color: #fff !important;
-  background-color: #54A99B !important;
+  background-color: #47BAA8 !important;
 }
 
 /* Top Nav (Alternative - Homepage White)
@@ -174,7 +188,6 @@ a:hover {
   line-height: 1.8em;
 }
 
-
 /* Pricing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .pricing--item {
@@ -234,6 +247,7 @@ a:hover {
   width: 100%;
   color: #fff;
   background: url(../../img/footer_bg.png) center center no-repeat;
+  background-size: cover;
 }
 .footer
 a {
@@ -252,15 +266,23 @@ a:hover {
   height: 45px !important;
 }
 .footer--logo {
-  width:  96px;
-  height: 45px;
+  width:  116px;
+  height: 65px;
   background: url(../../img/footer_logo.png) center center no-repeat;
   background-size: contain;
 }
 .footer--copyright {
-  margin: 30px auto 0 auto;
-  text-align: center;
+  margin: 4px 0;
+  text-align: left;
 }
+.footer--mesenger-icon {
+  position: relative;
+}
+.footer--mesenger-icon img {
+  position: absolute;
+  top: -16px;
+  left: 6px;
+  }
 
 @media (max-width: 700px) {
   /* Content
