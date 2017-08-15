@@ -1,4 +1,6 @@
-function voidLink() {
-  return false;
-}
-document.getElementById('void_link').addEventListener('click', voidLink, false);
+$('.nav--links__mobile').click(function() {
+  $('.mobile-nav').fadeIn();
+});
+$('.mobile-nav--close').click(function() {
+  $('.mobile-nav').fadeOut();
+});
