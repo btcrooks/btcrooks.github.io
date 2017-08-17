@@ -1,16 +1,23 @@
+/* Base Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 html
-body {
-  font-family: "futura-pt", sans-serif;
-}
-h1,
-h2,
-p {
-  font-family: "futura-pt", sans-serif;
+body {}
+h1, h2,
+h3, h4,
+h5, h6 {
+  font-family: "halyard-text", sans-serif;
 }
 
-ul
-li {
+p {
+  font-family: "oxygenregular", sans-serif;
+}
+
+ul li {
   list-style-type: none;
+}
+
+a {
+  font-family: "halyard-text", sans-serif;
 }
 
 /* Mobile Nav
@@ -34,9 +41,14 @@ li {
 }
 .mobile-nav--links {
   margin-top: 100px;
-  font-size: 40px;
 }
-
+.mobile-nav--links a {
+  font-size: 40px;
+  font-weight: 100;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
 .mobile-nav--close {
   position: fixed;
   top:   36px;
@@ -95,23 +107,26 @@ li {
   position: fixed;
   padding-top: 20px;
   width: 100%;
-  max-height: 80px;
+  height: 80px;
   top:  0;
   left: 0;
   z-index: 1000;
   background: #fff;
+
+  font-family:
 }
 .spacer--nav {
   height: 100px;
 }
-.nav
-a {
+.nav a {
   color: #000;
-  font-weight: 600;
+  font-size: 0.9em;
+  font-weight: 100;
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .5px;
 }
-.nav
-a:hover {
+.nav a:hover {
   color: #54A99B;
 }
 .nav--logo {
@@ -154,13 +169,11 @@ a:hover {
 .nav__alt {
   padding-top: 40px;
 }
-.nav__alt
-a {
+.nav__alt a {
   color: #fff;
   text-decoration: none;
 }
-.nav__alt
-a:hover {
+.nav__alt a:hover {
   color: #54A99B;
 }
 .nav--logo__alt {
@@ -291,13 +304,11 @@ a:hover {
   background: url(../../img/footer_bg.png) center center no-repeat;
   background-size: cover;
 }
-.footer
-a {
+.footer a {
   color: #fff;
   text-decoration: none;
 }
-.footer
-a:hover {
+.footer a:hover {
   text-decoration: underline;
 }
 .footer--field {
