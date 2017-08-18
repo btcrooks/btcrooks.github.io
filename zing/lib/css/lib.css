@@ -42,6 +42,7 @@ a {
 .mobile-nav--links {
   margin-top: 100px;
 }
+
 .mobile-nav--links a {
   font-size: 40px;
   font-weight: 100;
@@ -127,7 +128,7 @@ a {
   letter-spacing: .5px;
 }
 .nav a:hover {
-  color: #54A99B;
+  color: #06a99b;
 }
 .nav--logo {
   float: left;
@@ -140,6 +141,9 @@ a {
   float: right;
   margin-top: 14px;
 }
+.nav--link__active {
+  color: #06a99b !important;
+}
 .nav--links li {
   display: inline-block;
 }
@@ -147,13 +151,13 @@ a {
   margin-right: 16px;
 }
 .nav--link__book {
-  color: #47BAA8 !important;
-  border: 1px solid #47BAA8 !important;
+  color: #06a99b !important;
+  border: 1px solid #06a99b !important;
   height: 40px !important;
 }
 .nav--link__book:hover {
   color: #fff !important;
-  background-color: #47BAA8 !important;
+  background-color: #06a99b !important;
 }
 
 .nav--links__mobile {
@@ -174,7 +178,7 @@ a {
   text-decoration: none;
 }
 .nav__alt a:hover {
-  color: #54A99B;
+  color: #06a99b;
 }
 .nav--logo__alt {
   float: left;
