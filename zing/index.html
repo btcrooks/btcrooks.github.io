@@ -17,12 +17,12 @@
     <div class="mobile-nav">
       <div class="mobile-nav--close"><i class="fa fa-times fa-lg" aria-hidden="true"></i></div>
       <ul class="mobile-nav--links">
-        <li><a href="index.html">Home</a></li>
         <li><a href="instructors.html">Instructors</a></li>
         <li><a href="pricing.html">Pricing</a></li>
         <li><a href="company_karma.html">Company Karma</a></li>
         <li><a href="contact_us.html">Contact Us</a></li>
         <li><a href="#"><input class="nav--link__book" type="button" value="Book a Ride"></a></li>
+        <li><a href="index.html">Login/Sign Up</a></li>
       </ul>
     </div>
     <nav class="nav">
@@ -30,12 +30,12 @@
         <div class="row">
           <a href="index.html"><div class="nav--logo"></div></a>
           <ul class="nav--links hide--mobile">
-            <li><a class="nav--link__active" href="index.html">Home</a></li>
             <li><a href="instructors.html">Instructors</a></li>
             <li><a href="pricing.html">Pricing</a></li>
             <li><a href="company_karma.html">Company Karma</a></li>
             <li><a href="contact_us.html">Contact Us</a></li>
             <li><a href="#"><input class="nav--link__book" type="button" value="Book a Ride"></a></li>
+            <li><a href="index.html">Login / Sign Up</a></li>
           </ul>
           <div class="nav--links__mobile hide--desktop"> <i class="fa fa-bars fa-2x" aria-hidden="true"></i> </div>
         </div>
@@ -52,6 +52,17 @@
         </div>
         <div class="row" style="text-align: center;">
           <input class="header--book" type="button" value="Book a Ride">
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <h2 class="instafeed--title">Juicer</h2>
+      </div>
+      <div class="row">
+        <div class="instafeed--wrapper">
+            <ul id="instafeed"></ul>
         </div>
       </div>
     </div>
@@ -102,6 +113,18 @@
       </div>
     </footer>
     <script src="vendor/js/jquery.min.js"></script>
+    <script src="vendor/js/instafeed.min.js"></script>
+    <script type="text/javascript">
+      var feed = new Instafeed({
+        get: 'user',
+        userId: '5519825993',
+        accessToken: '222207571.1677ed0.030a904a5c22490b864c8112e19e2f09',
+        target: 'instafeed',
+        resolution: 'standard_resolution',
+        limit: 10
+      });
+      feed.run();
+    </script>
     <script src="lib/js/lib.js"></script>
   </body>
 </html>
