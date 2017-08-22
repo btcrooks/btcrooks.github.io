@@ -271,6 +271,7 @@ a {
 
 .pricing--description {
   padding: 10px;
+  padding: 0 20px;
   color: #000;
   font-size: 14px;
   font-weight: 400;
@@ -287,22 +288,12 @@ a {
 }
 .pricing--button:hover {
   color: #fff !important;
-  background-color: #000 !important;
-}
-
-.pricing--item__em
-.pricing--button {
-  margin-top: 5px;
-  color: #fff;
-
-  color: #06a99b !important;
   border: 2px solid #06a99b !important;
+  background-color: #06a99b !important;
 }
 
-.pricing--item__em
-.pricing--button:hover {
-  color: #fff !important;
-  background-color: #06a99b !important;
+.pricing--item__center {
+  margin-left: 16% !important;
 }
 /* Instafeed
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -375,6 +366,12 @@ a {
   }
   .hide--desktop {
     display: block;
+  }
+  .pricing--item__em {
+    padding-bottom: 20px;
+  }
+  .pricing--item__center {
+    margin-left: auto !important;
   }
 }
 @media (max-width: 700px) {
