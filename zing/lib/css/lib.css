@@ -155,6 +155,7 @@ a {
   border: 1px solid #06a99b !important;
   height: 40px !important;
 }
+
 .nav--link__book:hover {
   color: #fff !important;
   background-color: #06a99b !important;
@@ -289,16 +290,20 @@ a {
   background-color: #000 !important;
 }
 
-.pricing--item__em {
-  margin-top: -50px;
-  height: 500px;
+.pricing--item__em
+.pricing--button {
+  margin-top: 5px;
+  color: #fff;
+
+  color: #06a99b !important;
+  border: 2px solid #06a99b !important;
 }
 
 .pricing--item__em
-.pricing--button {
-  margin-top: 60px;
+.pricing--button:hover {
+  color: #fff !important;
+  background-color: #06a99b !important;
 }
-
 /* Instafeed
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .instafeed--title {
