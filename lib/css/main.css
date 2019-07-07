@@ -17,6 +17,10 @@ body {
 
 strong { font-weight: 600; }
 
+.emoji {
+  font-family: "Apple Color Emoji";
+}
+
 .logo {
   margin: 0 auto;
   margin-bottom: 40px;
