@@ -91,7 +91,7 @@
             prototyping. I work with product owners, designers and engineers to
             create memorable experiences for users and meet strategic business
             goals.</p>
-            <p>With over 4 years of experience, I’ve worked
+            <p>With over <span id="careerLength">6</span> years of experience, I’ve worked
             with various brands to help develop identities, mobile experiences,
             and digital products. I believe in simplicity and
             craftsmanship.</p>
@@ -247,5 +247,20 @@
     <script src='vendor/js/scrollReveal.min.js'></script>
     <script src="vendor/js/jquery.min.js"></script>
     <script src="lib/js/lib.js"></script>
+    <!-- Page Specific Scripts -->
+    <script type="text/javascript">
+      var element = document.querySelector('#careerLength');
+      if (element) {
+        try {
+          var date = new Date();
+          var startYear = 2015 | 0;
+          var currentYear = date.getFullYear() | 0;
+          element.innerHTML = (currentYear - startYear);
+        } catch (err) {
+          console.error('Something went wrong trying to set a new date', err);
+          console.trace();
+        }
+      }
+    </script>
   </body>
 </html>
