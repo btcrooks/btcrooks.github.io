@@ -1,0 +1,95 @@
+<!--
+  TODO:
+    1) Activate Analytics
+-->
+<!DOCTYPE html>
+<!--
+#### MathShuffle r1.3
+-->
+<html>
+  <head>
+    <!-- <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-55067610-3', 'auto');
+      ga('send', 'pageview');
+
+    </script> -->
+
+    <title>MathShuffle</title>
+    <link rel="stylesheet" type="text/css" href="vendor/uikit-2/css/uikit.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/css/layout.css">
+  </head>
+  <body id="msApp">
+    <div class="menu">
+      <div id="mode-menu" class="mode-menu">
+        <div id="mode-menu-icon" class="uk-icon-bars" onClick="msMenu.toggleMenu()"></div>
+        <div id="problem-type-add" onClick="msMenu.changeType('addition')"></div>
+        <div id="problem-type-sub" onClick="msMenu.changeType('subtraction')"></div>
+        <div id="problem-type-mul" onClick="msMenu.changeType('multiplication')"></div>
+        <div id="problem-type-div" onClick="msMenu.changeType('division')"></div>
+        <div id="problem-type-shuffle" class="icon-disabled" onClick="fader($notification, 'We are working on this feature ;)...')"></div>
+        <div id="problem-type-time-trial" class="icon-disabled" onClick="fader($notification, 'Time Trials are under construction...')"></div>
+      </div>
+      <div class="">
+        <span class="score">Score: <span id="score">0</span></span>
+      </div>
+    </div>
+    <div class="view soft-corners">
+      <div id="notification" class="notification soft-corners-top">
+        <div id="notification-text">Hello :)</div>
+      </div>
+      <div class="equation">
+        <span id="val1"></span>
+        <span id="operator"></span>
+        <span id="val2"></span>
+      </div>
+      <form action="javascript:void[0]" onSubmit="player.answer()">
+        <div class="usr-answer-container">
+          <input type="text" id="usr-answer" placeholder="..." autofocus />
+        </div>
+        <div class="submit-btn-container">
+          <input type="button" class="uk-button submit-btn" value="Submit" onClick="player.answer()" />
+        </div>
+      </form>
+      <div class="streak-container">
+        <span class="streak">Streak: <span id="streak">0</span></span>
+      </div>
+    </div>
+    <span class="modal shade" onClick="closeWindow()"></span>
+    <span class="modal window soft-corners">
+    <div class="soft-corners-top">
+      <strong>What's new</strong> (v1.3)
+      <span id="window-close" class="window-close uk-icon-close" onClick="closeWindow()"></span>
+    </div>
+    <div>
+      - Support for <strong>Division</strong>.<br/>
+      - <strong>Shuffle mode: </strong> Shuffle between all or only a select number of modes.<br/>
+      - - <em>shuffle all</em> to shuffle all modes.<br/>
+      - - <em>shuffle add, sub</em> to shuffle between addition and subtraction only.<br/>
+      - - View changelog
+    </div>
+    <div><strong>Coming Soon</strong> (v3)</div>
+    <div>
+      - Write updates...
+    </div>
+      <div class="begin-btn-container">
+        <input type="button" id="begin-btn" class="uk-button begin-btn" value="Got It!" onClick="closeWindow()" />
+      </div>
+    </span>
+    <script src="vendor/jquery/jquery-1.11.1.min.js"></script>
+    <script src="vendor/jquery/jquery.easing.min.js"></script>
+    <script src="vendor/jquery/jquery-ui.min.js"></script>
+    <script src="vendor/uikit-2/js/uikit.min.js"></script>
+    <script src="lib/js/app.js"></script>
+    <script>
+      window.onload = function(){
+        // Initialize
+        genQuestion();
+      }
+    </script>
+  </body>
+</html>
