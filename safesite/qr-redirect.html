@@ -29,7 +29,10 @@
 
         const operatingSystem = getOS();
 
-        if (operatingSystem) {
+        const urlParams = new URLSearchParams(window.location.search);
+        const pause = urlParams.get('pause');
+
+        if (operatingSystem && pause !== null) {
             switch (operatingSystem) {
                 case 'iOS':
                     window.location.href = "https://apps.apple.com/us/app/safesite-safety-management-app/id892386806";
