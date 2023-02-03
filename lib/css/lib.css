@@ -37,7 +37,7 @@ footer,
   background: url(../../img/global/menu_button.svg) center center no-repeat;
   transition: all .2s ease-in-out;
   cursor: pointer;
-  z-index: 100;
+  /* z-index: 100; */
 }
 .nav__button:hover {
   background: url(../../img/global/menu_button_hover.svg) center center no-repeat;
@@ -79,7 +79,9 @@ footer,
   padding: 0 0 0 108px;
   width:  100%;
   height: 400px;
-
+  font-family: "mr-eaves-sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .nav__container ul li a {
   font-size: 30px;
@@ -171,6 +173,9 @@ p {
   font-size: 40px;
   font-weight: lighter;
   line-height: 150%;
+}
+p, div {
+  letter-spacing: 0.1rem;
 }
 p.subheader {
   font-size: 20px;
@@ -288,7 +293,7 @@ strong {
 }
 a {
   position: relative;
-  color: #f37d80;
+  color: #f05d60;
   text-decoration: none;
   transition: all .2s ease-in-out;
 }
@@ -357,9 +362,31 @@ section {
   margin: 0;
 }
 .section__title {
-  margin-bottom: 220px;
-  padding-top: 240px;
+  padding-bottom: 140px;
+  padding-top: 330px;
   width: 100%;
+}
+.section__title * {
+  font-size: 50px;
+}
+.section__login {
+  text-align: center;
+}
+.section__login p {
+  margin: -6px 0 0;
+}
+.section__login .descripton-text,
+.section__login a {
+  font-size: 22px;
+}
+.section__login .descripton-text {
+  color: #B3B3B3;
+  font-family: "mr-eaves-sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.login__form {
+  margin: 32px 0 0;
 }
 .section__selected-works {
   margin-bottom: 200px;
@@ -416,7 +443,7 @@ section {
   margin-top: -93px;
   margin-left: 20px;
   margin-bottom: 40px;
-  max-width: 170px;
+  max-width: 300px;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -425,20 +452,25 @@ section {
 }
 .cs__info-container {
   margin-left: 20px;
-  font-size: 16px;
+  font-size: 18px;
   color: #fff;
 }
 .cs__role {
-  margin-bottom: 6px;
+  margin-bottom: 2px;
   color: #adadad;
-}
-.cs__description {
-  margin-bottom: 20px;
-  font-size: 30px;
+  font-size: 18px;
   line-height: 120%;
 }
+.cs__description {
+  margin-bottom: 16px;
+  font-size: 32px;
+  line-height: 120%;
+  font-family: "mr-eaves-sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
 .cs__button {
-  font-size: 18px;
+  font-size: 24px;
 }
 .cs__button--disabled {
   color: #aeaeae;
